@@ -1,0 +1,260 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+html{
+	scroll-behavior: smooth;
+}
+body {
+	background: #f9f9f9;
+	font-family:'Montserrat', sans-serif;
+}
+
+.shadow {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.profile-tab-nav {
+	min-width: 250px;
+}
+
+.tab-content {
+	flex: 1;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.nav-pills a.nav-link {
+	padding: 15px 20px;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0;
+	color: #333;
+}
+.nav-pills a.nav-link i {
+	width: 20px;
+}
+
+.img-circle img {
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	border: 5px solid #fff;
+}
+
+.button{
+		display: inline-block;
+		font-weight: 400;
+		color: #ffffff;
+		background-color: crimson;
+		text-align: center;
+		vertical-align: middle;
+	
+		border: 1px solid transparent;
+		padding: 0.375rem 0.75rem;
+		font-size: 1rem;
+		line-height: 1.5;
+		border-radius: 0.25rem;
+		transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	
+}
+
+/* .buttonbck{
+	display: inline-block;
+	font-weight: 400;
+	color: #000000;
+	background-color: rgb(140, 137, 138);
+	text-align: center;
+	vertical-align: middle;
+	outline-color: none;
+
+	border: 1px solid transparent;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+} */
+
+/* .buttonbck:hover{
+	background-color: rgb(236, 65, 99);
+	color: #ffffff;
+} */
+
+.button:hover{
+	background-color: rgb(236, 65, 99);
+	color: #ffffff;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: crimson;
+}
+
+.form-group input:focus{
+	/* background-color: red; */
+	box-shadow:none;
+	
+	border: 1px solid crimson;
+	
+
+}
+.form-control:focus{
+	/* background-color: red; */
+	box-shadow:none;
+	
+	border: 1px solid crimson;
+	
+
+}
+
+
+
+.form-group textarea:focus{
+	/* background-color: red; */
+	box-shadow:none;
+	
+	border: 1px solid crimson;
+	
+}
+.alink a{
+	color: white;		
+	margin-left:2px;
+	font-size:0.9rem;
+	border: 2px solid black;
+}
+.wrapper{
+	width: min(1000px, 100% - 3rem);
+	margin-inline: auto;
+	height: 300px;
+	overflow-y: auto;
+	
+
+}
+table {
+	width: 100%;
+	background-color: rgb(242, 242, 242);
+	
+	
+	 border-collapse: collapse;
+
+
+	
+}
+th,td{
+	padding:1px;
+	font-size: 1rem;
+	/* margin-right:1rem; */
+	
+}
+
+th{
+	text-align: left;
+   font-size: 1rem;
+	background-color:  rgba(31, 30, 30, 0.24);
+	color: white;
+	text-transform: uppercase;
+}
+
+tr:nth-of-type(2n){
+	background-color: rgb(230, 230, 230);
+}
+@media (max-width: 1000px){
+	th{
+		display: none;
+		
+	}
+	td:first-child{
+		padding-top: 1rem;
+	
+	}
+	td:last-child{
+	padding-bottom: 1rem;
+
+	}
+
+	td{
+		display:grid;
+		grid-template-columns: 10ch auto;
+		gap: 0.5rem;
+		
+		
+	}
+	td:nth-of-type(1)::before{
+		content: "Role:";
+		padding: 0 5px;
+		
+	}
+	td:nth-of-type(2)::before{
+		content: "Company:";
+		padding: 0 5px;
+
+	}
+	td:nth-of-type(3)::before{
+		content: "shift:";
+		padding: 0 5px;
+
+	}
+	td:nth-of-type(4)::before{
+		content: "location:";
+		padding: 0 5px;
+
+	}
+	td:nth-of-type(5)::before{
+		content: "Salary:";
+		padding: 0 5px;
+
+
+}
+
+h1{
+	margin-top: 50px;
+}
+}
+
+.btn2{
+	
+	border: 2px solid crimson;
+	padding: 1px;
+	font-size: 1em;
+	/* font-weight: 600; */
+	font-family: 'Montserrat', sans-serif;
+	width: 70px;
+	border-radius: 2px;
+	transition: 0.2s ease-out;
+	transition-property: background-color, color ease-out;
+	background-color: white;
+	color: black;
+	margin: 5px 5px;
+	
+	
+	
+	}
+	.btn2:hover{
+		color: white;
+		background-color: crimson;
+		border: 2px solid crimson;
+	}
+	.red{
+	
+		border: 2px solid crimson;
+		padding: 1px;
+		font-size: 1em;
+		/* font-weight: 600; */
+		font-family: 'Montserrat', sans-serif;
+		width: 70px;
+		border-radius: 2px;
+		transition: 0.2s ease-out;
+		transition-property: background-color, color ease-out;
+		background-color: white;
+		color: black;
+		margin: 5px 5px;
+		
+		
+		
+		}
+		.red:hover{
+			color: white;
+			background-color: crimson;
+			border: 2px solid crimson;
+		}
