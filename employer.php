@@ -71,6 +71,8 @@ $vrow = mysqli_fetch_assoc($blah);
 			color: crimson;
 			font-weight: 400;
 			border-radius: 2px;
+			/* background-color: green; */
+
 
 		}
 	</style>
@@ -191,7 +193,9 @@ $vrow = mysqli_fetch_assoc($blah);
 						<h3 class="mb-4">Password Settings</h3>
 						<?php echo $msg; ?>
 						<form action="" method="post" id="passwordquali">
-							<div id="error_msg3"></div>
+							<div id="error_msg3" style="color:crimson;
+				font-size:1rem;
+				font-weight:700;"></div>
 							<div class="row">
 
 								<div class="col-md-6">
@@ -227,7 +231,9 @@ $vrow = mysqli_fetch_assoc($blah);
 				<div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
 					<h3 class="mb-4">Company details</h3>
 					<form action="" method="post" id="companyquali">
-						<div id="error_msg6"></div>
+						<div id="error_msg6" style="color:crimson;
+				font-size:1rem;
+				font-weight:700;"></div>
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
@@ -304,7 +310,9 @@ $vrow = mysqli_fetch_assoc($blah);
 				<div class="tab-pane fade" id="application" role="tabpanel" aria-labelledby="application-tab">
 					<h3 class="mb-4">Job details</h3>
 					<form action="" method="post" id="postajob">
-						<div id="error_msg2"></div>
+						<div id="error_msg2" style="color:crimson;
+				font-size:1rem;
+				font-weight:700;"></div>
 						<div class="row">
 
 							<div class="col-md-6">
@@ -370,8 +378,14 @@ $vrow = mysqli_fetch_assoc($blah);
 			</div>
 			<!-- posted jobs -->
 			<div class="tab-pane fade" id="postedjobs" role="tabpanel" aria-labelledby="notification-tab">
-				<h3 class="mb-4">Posted Jobs</h3>
-				<div id="error_msg4"></div>
+				<h3 class="mb-4">Posted Jobs<div id="error_msg4" style="color:crimson;
+				font-size:1rem;
+				font-weight:700;
+				
+				"></div>
+				</h3>
+
+
 				<div class="wrapper" id="scores3">
 					<?php
 					$query = mysqli_query($conn, "SELECT * FROM jobs WHERE email='{$_SESSION['SESSION_EMAIL']}'");
@@ -425,6 +439,7 @@ $vrow = mysqli_fetch_assoc($blah);
 								?>
 							</tbody>
 						</table>
+
 					<?php
 					} else {
 						$bl = "<h2 class='alert'='start'>no jobs posted !!</h2>";

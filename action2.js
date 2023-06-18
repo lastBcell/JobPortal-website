@@ -27,6 +27,10 @@ $(document).ready(function() {
             method: 'POST',
             success: function(resp) {
                 $('#error_msg6').html(resp);
+                // $('#error_msg6').hide(3000);
+                $('#error_msg6').html(resp).show(500);
+                
+                $('#error_msg6').delay(2000).hide(500);
             }
         })
     })
@@ -42,13 +46,16 @@ $(document).ready(function() {
             method: 'POST',
             success: function(resp) {
                 $('#error_msg3').html(resp);
+                $('#error_msg3').html(resp).show(500);
+                
+                $('#error_msg3').delay(2000).hide(500);
             }
         })
     })
  
 })
 $(document).ready(function() {
-    $('#postajob').submit(function(e) {
+    $('#postajob').  on('submit', function(e)  {
         e.preventDefault()
 
         $.ajax({
@@ -56,7 +63,11 @@ $(document).ready(function() {
             data: $(this).serialize(),
             method: 'POST',
             success: function(resp) {
-                $('#error_msg2').html(resp);
+               
+                $("#table").load("employer.php #table"); 
+                $('#error_msg2').html(resp).show(500);
+                // $('#error_msg2');
+                $('#error_msg2').delay(2000).hide(500);
             }
         })
     })
@@ -78,14 +89,27 @@ $(document).ready(function() {
             data: {"myData":setid},
             method: 'POST',
             // async: false,
-            success: function(resp) {
-                $('#error_msg4').html(resp);
+            success: function(resp) { 
+                // $('#error_msg4').css('visibility','hidden');
+             
+                
                 $("#table").load("employer.php #table");
-                // $("#scores3").load("employer.php #scores3");
+                // $('#error_msg4').hide(100);
+                // timeout: 3000;
+                $('#error_msg4').html(resp).show(500);
+                
+                $('#error_msg4').delay(2000).hide(500);
+                // $('#error_msg4').css('visibility','hidden').show(1000);
+                
+
+                // alert(" employer data deleted");
+              
+
                
 
             }
         })
+         
 
 
     });
@@ -108,6 +132,7 @@ $(document).ready(function() {
                 $('#error_msg5').html(resp);
                 $("#table2").load("employer.php #table2");
                 // // $("#scores3").load("employer.php #scores3");
+                // $('#error_msg5').hide(3000);
                
 
             }
