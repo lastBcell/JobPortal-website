@@ -40,7 +40,7 @@ $(document).ready(function() {
             data: $(this).serialize(),
             method: 'POST',
             success: function(data) {
-                $('#searchresult').html(data);
+                $('#searchresult').html(data);   
             }
         })
     }

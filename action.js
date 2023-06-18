@@ -7,7 +7,10 @@ $(document).ready(function() {
             data: $(this).serialize(),
             method: 'POST',
             success: function(resp) {
-                $('#error_msg').html(resp);
+                $('#error_msg7').html(resp);
+                $('#error_msg7').html(resp).show(500); 
+                $('#error_msg7').delay(2000).hide(500);
+               
             }
         })
     })
@@ -23,6 +26,9 @@ $(document).ready(function() {
             method: 'POST',
             success: function(resp) {
                 $('#error_msg').html(resp);
+                $('#error_msg').html(resp).show(500); 
+                $('#error_msg').delay(2000).hide(500);
+               
             }
         })
     })
@@ -38,6 +44,9 @@ $(document).ready(function() {
             method: 'POST',
             success: function(resp) {
                 $('#error_msg3').html(resp);
+                $('#error_msg3').html(resp).show(500); 
+                $('#error_msg3').delay(2000).hide(500);
+               
             }
         })
     })
@@ -54,6 +63,9 @@ $(document).ready(function() {
             success: function(resp) {
                 $('#error_msg4').html(resp);
                 $("#scores").load("employee.php #scores");
+                $('#error_msg4').html(resp).show(500); 
+                $('#error_msg4').delay(2000).hide(500);
+               
             }
         })
     })

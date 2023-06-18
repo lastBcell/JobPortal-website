@@ -133,6 +133,8 @@ $(document).ready(function() {
                 $("#table2").load("employer.php #table2");
                 // // $("#scores3").load("employer.php #scores3");
                 // $('#error_msg5').hide(3000);
+                $('#error_msg5').html(resp).show(500); 
+                $('#error_msg5').delay(2000).hide(500);
                
 
             }

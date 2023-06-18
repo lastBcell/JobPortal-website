@@ -454,7 +454,11 @@ $vrow = mysqli_fetch_assoc($blah);
 			<div class="tab-pane fade" id="empreq" role="tabpanel" aria-labelledby="notification-tab">
 				<h3 class="mb-4">Requests</h3>
 				<div class="wrapper">
-					<div id="error_msg5"></div>
+					<div id="error_msg5" style="color:crimson;
+				font-size:1rem;
+				font-weight:700;
+				
+				"></div>
 					<?php
 					$aquery = mysqli_query($conn, "SELECT * FROM apply WHERE compemail='{$_SESSION['SESSION_EMAIL']}'");
 

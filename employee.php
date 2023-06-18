@@ -221,13 +221,18 @@ $vrow = mysqli_fetch_assoc($blah);
 					<!-- pass -->
 					<div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
 						<h3 class="mb-4">Password Settings</h3>
+						<div id="error_msg3" style="color:crimson;
+				font-size:1rem;
+				font-weight:700;
+				
+				"></div>
 						<form action="" method="post" id="passwordquali">
 							<?php echo $msg; ?>
 							<div class="row">
 
 								<div class="col-md-6">
 									<div class="form-group">
-										<div id="error_msg3"></div>
+
 										<label>Old password</label>
 										<input type="password" name="oldpass" class="form-control" required>
 									</div>
@@ -258,6 +263,11 @@ $vrow = mysqli_fetch_assoc($blah);
 				<!-- proff quali -->
 				<div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
 					<h3 class="mb-4">Professional qualification</h3>
+					<div id="error_msg7" style="color:crimson;
+				font-size:1rem;
+				font-weight:700;
+				
+				"></div>
 					<form action="" method="post" id="proquali">
 						<div class="row">
 							<div class="col-md-6">
@@ -299,9 +309,14 @@ $vrow = mysqli_fetch_assoc($blah);
 			<!-- academin quali -->
 			<div class="tab-pane fade" id="application" role="tabpanel" aria-labelledby="application-tab">
 				<h3 class="mb-4">Academic Qalification</h3>
+				<div id="error_msg" style="color:crimson;
+				font-size:1rem;
+				font-weight:700;
+				
+				"></div>
 				<form action="" method="post" id="acaquali">
 					<div class="row">
-						<div id="error_msg"></div>
+
 						<div class="col-md-6">
 							<div class="form-group">
 								<label>Qualification</label>
@@ -360,7 +375,11 @@ $vrow = mysqli_fetch_assoc($blah);
 			<h3 class="mb-4">Applied Jobs</h3>
 
 			<div class="wrapper">
-				<div id="error_msg4"></div>
+				<div id="error_msg4" style="color:crimson;
+				font-size:1rem;
+				font-weight:700;
+				
+				"></div>
 				<form action="" method="post" id="applydelete">
 					<?php
 					$aquery = mysqli_query($conn, "SELECT * FROM apply WHERE email='{$_SESSION['SESSION_EMAIL']}'");
@@ -417,7 +436,7 @@ $vrow = mysqli_fetch_assoc($blah);
 			</table>
 		<?php
 					} else {
-						echo '<h2>no data found</h2>';
+						echo '<h1 class ="alert";>No data found</h1>';
 					}
 		?>
 
