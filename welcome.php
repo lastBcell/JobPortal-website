@@ -126,9 +126,7 @@ if (isset($_POST['details'])) {
     <div class="services container">
       <div class="service-top">
         <h1 class="section-title">company<span>info</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deleniti maiores pariatur assumenda quas
-          magni et, doloribus quod voluptate quasi molestiae magnam officiis dolorum, dolor provident atque molestias
-          voluptatum explicabo!</p>
+        <p>These are the top recruitimg companies..</p>
       </div>
       <div class="service-bottom">
         <?php
@@ -206,12 +204,8 @@ if (isset($_POST['details'])) {
 
       <div class="col-right">
         <h1 class="section-title">About <span>Us</span></h1>
-        <h2>Front End Developer</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque
-          repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt
-          exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni!
-          Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt
-          reprehenderit libero enim!</p>
+        <h2>Connecting people</h2>
+        <p>The online job portal system is designed to provide a platform for job seekers and employers to connect, facilitating the recruitment and hiring process for various types of employment opportunities.​The online job portal system is developed to be reliable, user-friendly, scalable, secure, and efficient, ultimately providing a valuable service to the job market</p>
 
       </div>
     </div>
@@ -260,7 +254,7 @@ if (isset($_POST['details'])) {
         <h1>Job<span>Portal</span> </h1>
       </div>
       <h2>Find your perfect job</h2>
-      <div class="social-icon">
+      <!-- <div class="social-icon">
         <div class="social-item">
           <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
         </div>
@@ -270,7 +264,7 @@ if (isset($_POST['details'])) {
         <div class="social-item">
           <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
         </div>
-      </div>
+      </div> -->
 
 
     </div>
